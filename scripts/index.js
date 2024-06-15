@@ -118,4 +118,22 @@ function renderCourses() {
 document.addEventListener('DOMContentLoaded', function() {
     renderCourses();
 });
+// Function to update active menu item
+function updateActiveMenuItem() {
+    var menuItems = document.querySelectorAll('nav a');
+    var currentPage = window.location.pathname; // Get current page URL path
+    
+    menuItems.forEach(function(item) {
+        if (item.href.includes(currentPage)) {
+            item.classList.add('active'); // Add 'active' class to current menu item
+        } else {
+            item.classList.remove('active'); // Remove 'active' class from other items
+        }
+    });
+}
+
+// Call the function when the DOM content is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    updateActiveMenuItem();
+});
 
