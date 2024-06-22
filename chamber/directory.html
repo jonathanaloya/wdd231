@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of commerce</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="WDD 231 - Web Frontend development 1, a webpage by Jonathan Aloya offering a home page for chamber of commerce.">
+    <meta name="author" content="Jonathan Aloya">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://i0.wp.com/vibrantholidaysafaris.com/wp-content/uploads/2023/07/Why-Is-Uganda-Called-The-Pearl-Of-Africa-Vibrant-Holiday-Safaris.png?w=770&ssl=1">
+    <meta property="og:url" content="https://jonathanaloya.github.io/wdd231/">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Jalok.png" alt="Kampala Chamber of Commerce">
+                <h1>Kamapala</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn">Light Theme</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Member Directory</h2>
+        <div id="view-toggle">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <section id="member-list">
+            <!-- Member cards or list items will be injected here by JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Kampala Chamber of Commerce</strong></p>
+                <p>Kololo, Wampewo Avenue</p>
+                <p>Kampala, Uganda</p>
+                <p>info@kampcc.org</p>
+                <p>(+256) 773-841-368</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+            <div class="footer-info">
+                <p>WDD231 Class Project</p>
+                <p>Jonathan Aloya</p>
+                <p>&copy; <span id="year"></span> Kampala Chamber of Commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
