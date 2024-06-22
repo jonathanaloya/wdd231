@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
 
     let members = [];
+    let currentView = 'grid'; // Initialize the current view as grid
 
     async function fetchMembers() {
         const response = await fetch('data/members.json');
         members = await response.json();
-        displayMembers(members, 'grid');
+        displayMembers(members, currentView); // Pass the current view to the displayMembers function
     }
 
     function displayMembers(members, view) {
@@ -29,8 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    gridViewBtn.addEventListener('click', () => displayMembers(members, 'grid'));
-    listViewBtn.addEventListener('click', () => displayMembers(members, 'list'));
+    gridViewBtn.addEventListener('click', () => {
+        currentView = 'grid'; // Update the current view to grid
+        displayMembers(members, currentView);
+        gridViewBtn.classList.add('active');
+        listViewBtn.classList.remove('active');
+    });
+
+    listViewBtn.addEventListener('click', () => {
+        currentView = 'list'; // Update the current view to list
+        displayMembers(members, currentView);
+        listViewBtn.classList.add('active');
+        gridViewBtn.classList.remove('active');
+    });
 
     // Theme toggle functionality
     themeToggleBtn.addEventListener('click', () => {
