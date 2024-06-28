@@ -77,10 +77,16 @@ main {
 }
 
 #view-toggle {
+    display: flex;
     text-align: right;
     margin-bottom: 20px;
+    margin: 1rem 0;
 }
-
+#view-toggle button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
 #member-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
