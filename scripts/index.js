@@ -4,6 +4,94 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 // Populate last modified date
 document.getElementById('lastModified').textContent = `Last Updated: ${document.lastModified}`;
 
+document.addEventListener('DOMContentLoaded', () => {
+    const courseDetails = {
+        1: {
+            title: 'CSE 110',
+            subtitle: 'Introduction to Computer Science',
+            credits: '3 credits',
+            certificate: 'Certificate: Computer Science',
+            description: 'Introduction to the fundamental concepts of computer science. Topics include algorithms, data structures, and programming principles.',
+            technology: 'Technology: Python'
+        },
+        2: {
+            title: 'WDD 130',
+            subtitle: 'Web Fundamentals',
+            credits: '2 credits',
+            certificate: 'Certificate: Web and Computer Programming',
+            description: 'This course introduces students to the World Wide Web and to careers in website design and development. The course is hands-on with students actually participating in simple web designs and programming.',
+            technology: 'Technology: HTML, CSS'
+        },
+        3: {
+            title: 'CSE 111',
+            subtitle: 'Data Structures',
+            credits: '3 credits',
+            certificate: 'Certificate: Computer Science',
+            description: 'An in-depth look at data structures, including lists, stacks, queues, trees, and graphs, with an emphasis on implementation and efficiency.',
+            technology: 'Technology: C++'
+        },
+        4: {
+            title: 'WDD 131',
+            subtitle: 'Web Development 1',
+            credits: '3 credits',
+            certificate: 'Certificate: Web and Computer Programming',
+            description: 'This course covers the basics of web development using HTML, CSS, and JavaScript. Students will build interactive web pages and learn about web standards.',
+            technology: 'Technology: HTML, CSS, JavaScript'
+        },
+        5: {
+            title: 'CSE 210',
+            subtitle: 'Advanced Mathematics',
+            credits: '3 credits',
+            certificate: 'Certificate: Computer Science',
+            description: 'Dive into advanced mathematical concepts including calculus, linear algebra, and differential equations. This course is designed for students who wish to deepen their understanding of mathematics as it applies to computer science.',
+            technology: 'Technology: MATLAB, Python'
+        },
+        6: {
+            title: 'WDD 231',
+            subtitle: 'Web Frontend Development 1',
+            credits: '3 credits',
+            certificate: 'Certificate: Web and Computer Programming',
+            description: 'An introduction to frontend web development using modern JavaScript frameworks. Students will learn about responsive design, accessibility, and performance optimization.',
+            technology: 'Technology: HTML, CSS, JavaScript, React'
+        }
+    };
+
+    const modal = document.getElementById('course-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSubtitle = document.getElementById('modal-subtitle');
+    const modalCredits = document.getElementById('modal-credits');
+    const modalCertificate = document.getElementById('modal-certificate');
+    const modalDescription = document.getElementById('modal-description');
+    const modalTechnology = document.getElementById('modal-technology');
+    const closeButton = document.querySelector('.close-button');
+
+    document.querySelectorAll('.courses button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const courseId = event.target.dataset.courseId;
+            const course = courseDetails[courseId];
+
+            if (course) {
+                modalTitle.textContent = course.title;
+                modalSubtitle.textContent = course.subtitle;
+                modalCredits.textContent = course.credits;
+                modalCertificate.textContent = course.certificate;
+                modalDescription.textContent = course.description;
+                modalTechnology.textContent = course.technology;
+                modal.style.display = 'block';
+            }
+        });
+    });
+
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
 
 function toggleNav() {
     var hamburger = document.querySelector('.hamburger');
@@ -136,4 +224,5 @@ function updateActiveMenuItem() {
 document.addEventListener('DOMContentLoaded', function() {
     updateActiveMenuItem();
 });
+
 

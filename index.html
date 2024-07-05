@@ -63,16 +63,31 @@
                 <p id="totalCredits"></p>
             </div>            
             <div class="courses">
-                <button class="cse">CSE 110</button>
-                <button class="wdd">WDD 130</button>
-                <button class="cse">CSE 111</button>          
-                <button class="wdd">WDD 131</button>
-                <button class="cse">CSE 210</button>
-                <button class="wdd">WDD 231</button>
+                <button class="cse" data-course-id="1">CSE 110</button>
+                <button class="wdd" data-course-id="2">WDD 130</button>
+                <button class="cse" data-course-id="3">CSE 111</button>                    
+                <button class="wdd" data-course-id="4">WDD 131</button>
+                <button class="cse" data-course-id="5">CSE 210</button>
+                <button class="wdd" data-course-id="6">WDD 231</button>
             </div>
         </section>
     </main>
-    
+    <!-- Modal Structure -->
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h3 id="modal-subtitle"></h3>
+                <p id="modal-credits"></p>
+                <p id="modal-certificate"></p>
+                <p id="modal-description"></p>
+                <p id="modal-technology"></p>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>© <span id="currentyear"></span> 🌲 Jonathan Aloya 🌲 Uganda </p>
         <p id="lastModified"></p>
