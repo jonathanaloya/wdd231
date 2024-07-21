@@ -1,0 +1,24 @@
+[
+    {
+        "firstName": "Joel",
+        "lastName": "Omaje",
+        "reason": "I love growing my own food.",
+        "contact": "+256 752469961",
+        "email": "123joelomaje@gmail.com"
+    },
+    {
+        "firstName": "Jonathan",
+        "lastName": "Aloya",
+        "reason": "I'm passionate about sustainable living.",
+        "contact": "+256 773841368",
+        "email": "jonathanaloya27@gmail.com"
+    },
+    {
+        "firstName": "Sharon",
+        "lastName": "Adikin",
+        "reason": "I love utilizing small spaces for producing vegetables",
+        "contact": "+256 750540071",
+        "email": "sharonadikin81@gmail.com"
+    }
+
+]

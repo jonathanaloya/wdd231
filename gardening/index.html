@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gardening Community</title>
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="WDD 231 - Web Frontend development 1, a webpage by Jonathan Aloya offering a home page for Urban Gardening.">
+    <meta name="author" content="Jonathan Aloya">
+    <meta property="og:title" content="Urban Gardening">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vamospanish.com/wp-content/uploads/urban-gardening-Buenos-Aires-1.jpg">
+    <meta property="og:url" content="https://jonathanaloya.github.io/wdd231/gardening/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Urban gardening comunity">
+            <h1>Urban Gardening comunity</h1>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="started.html">Getting Started</a></li>
+                <li><a href="forum.html">Community Forum</a></li>
+                <li><a href="resources.html">Local Resources</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero1.jpg" alt="Urban Gardening Hero Image" class="hero-image">
+            <div class="hero-text">
+                <h1>Welcome to the Urban Gardening Community</h1>
+                <p>Your go-to resource for urban gardening tips, guides, and community support.</p>
+            </div>
+        </section>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>Featured Sections</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Getting Started</h3>
+                        <p>Learn how to start your own urban garden with our step-by-step guides.</p>
+                        <a href="started.html">Learn More</a>
+                    </div>
+                    <div class="feature">
+                        <h3>Community Forum</h3>
+                        <p>Join the discussion and share your experiences with other gardeners.</p>
+                        <a href="forum.html">Join Now</a>
+                    </div>
+                    <div class="feature">
+                        <h3>Local Resources</h3>
+                        <p>Find local garden supply stores, nurseries, and community gardens.</p>
+                        <a href="resources.html">Explore</a>
+                    </div>
+                </div>
+            </aside>
+            <section class="content">
+                <section class="intro">
+                    <h1>Welcome to the Urban Gardening Community Where Green Meets Life</h1>
+                    <p>Whether you're tending to a cozy balcony, a rooftop oasis, or a tiny windowsill, urban gardening is your passport to cultivating nature in the heart of the concrete jungle. Here, amidst the hustle and bustle, we find solace in soil, seeds, and the promise of fresh produce.</p>
+                </section>
+                <section class="newsletter">
+                    <h2>Sign Up for Our Newsletter</h2>
+                    <form id="newsletterform">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Urban Gardening</strong></p>
+                <p>Muyenga</p>
+                <p>Kampala, Uganda</p>
+                <p>info@kampug.org</p>
+                <p>(+256) 773-841-368</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="/chamber/images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="/chamber/images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="/chamber/images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/chamber/images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+            <div class="footer-info">
+                <p>WDD231 Class Project</p>
+                <p>Jonathan Aloya</p>
+                <p>&copy; <span id="year"></span> Urban Gardening</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

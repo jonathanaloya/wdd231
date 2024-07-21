@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Resources - Urban Gardening Community</title>
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="WDD 231 - Web Frontend development 1, a webpage by Jonathan Aloya offering a home page for Urban Gardening.">
+    <meta name="author" content="Jonathan Aloya">
+    <meta property="og:title" content="Urban Gardening">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vamospanish.com/wp-content/uploads/urban-gardening-Buenos-Aires-1.jpg">
+    <meta property="og:url" content="https://jonathanaloya.github.io/wdd231/gardening/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/started.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Urban gardening comunity">
+            <h1>Urban Gardening comunity</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="started.html">Getting Started</a></li>
+                <li><a href="forum.html">Community Forum</a></li>
+                <li><a href="resources.html">Local Resources</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#stores">Garden Supply Stores</a></li>
+                <li><a href="#nurseries">Nurseries</a></li>
+                <li><a href="#gardens">Community Gardens</a></li>
+            </ul>
+            <h2>Videos</h2>
+            <ul class="video-links">
+                <li><a href="https://www.youtube.com/watch?v=BO8yuSTc3fo" target="_blank">Urban Gardening Basics</a></li>
+                <li><a href="https://www.youtube.com/watch?v=y1eXnlzXdBE" target="_blank">Container Gardening Tips</a></li>
+                <li><a href="https://www.youtube.com/watch?v=6gXB3JFWJZI" target="_blank">Community Garden Tour</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h1>Local Resources</h1>
+            <article id="stores">
+                <h2>Garden Supply Stores</h2>
+                <img src="images/store1.jpg" alt="Garden Supply Store" class="resource-image">
+                <p>Find the best stores for all your gardening needs. From soil and fertilizers to tools and planters, these stores have it all.</p>
+                <ul>
+                    <li>Green Thumb Supplies</li>
+                    <li>Urban Garden Center</li>
+                    <li>Plant It Earth</li>
+                </ul>
+            </article>
+            <article id="nurseries">
+                <h2>Nurseries</h2>
+                <img src="images/nursery.jpg" alt="Nursery" class="resource-image">
+                <p>Discover local nurseries with a variety of plants. Whether you're looking for flowers, shrubs, or vegetable seedlings, these nurseries offer a wide selection.</p>
+                <ul>
+                    <li>Blooming Gardens Nursery</li>
+                    <li>City Plant Nursery</li>
+                    <li>Green Oasis Nursery</li>
+                </ul>
+            </article>
+            <article id="gardens">
+                <h2>Community Gardens</h2>
+                <img src="images/community.jpg" alt="Community Garden" class="resource-image">
+                <p>Join a community garden near you. Share gardening tips, grow your own food, and become part of a supportive community.</p>
+                <ul>
+                    <li>Sunshine Community Garden</li>
+                    <li>Urban Harvest Garden</li>
+                    <li>Green Space Garden</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <p><strong>Urban Gardening</strong></p>
+                <p>Muyenga</p>
+                <p>Kampala, Uganda</p>
+                <p>info@kampug.org</p>
+                <p>(+256) 773-841-368</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="/chamber/images/youtube-icon.png" alt="YouTube"></a>
+                <a href="#"><img src="/chamber/images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="/chamber/images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/chamber/images/facebook-icon.png" alt="Facebook"></a>
+            </div>
+            <div class="footer-info">
+                <p>WDD231 Class Project</p>
+                <p>Jonathan Aloya</p>
+                <p>&copy; <span id="year"></span> Urban Gardening</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
