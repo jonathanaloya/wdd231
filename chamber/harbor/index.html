@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Web Frontend development 1, a webpage by Jonathan Aloya offering a home page for chamber of commerce.">
+    <meta name="author" content="Jonathan Aloya">
+    <meta property="og:title" content="Harbor Junior School">
+    <meta property="og:type" content="website">
+    <title>Harbor Junior School Ssumba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/logo.jpg" alt="Harbor Logo" class="logo">
+            <div class="school-info">
+                <p>Affiliated To The Ministry of Education And Sports</p>
+                <p>Affiliation No: 7630001 | Affiliation Period: 2022-2027</p>
+                <p>Affiliation Type: Primary | School Code: 90014</p>
+            </div>
+        </div>
+        <div class="header-main">           
+            <nav>
+                <ul>
+                    <li><a href="#">About Harbor Junior School <span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Mission, Vision, Key policies.</a></li>
+                            <li><a href="#">Message from the Chairman</a></li>
+                            <li><a href="#">Message from the Principal</a></li>
+                            <li><a href="#">Message from the Vice Principal Primary</a></li>
+                            <li><a href="#">Long Term Vision</a></li>
+                            <li><a href="#">School Policies</a></li>
+                            <li><a href="#">Board of Directors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Admissions <span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">How to Apply</a></li>
+                            <li><a href="#">Fees Structure</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Academics <span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Departments</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">News & Events <span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Latest News</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Infrastructure <span class="arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Facilities</a></li>
+                            <li><a href="#">School Tour</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="hero">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/hero1.jpg" alt="Hero Image 1">
+                <div class="caption">Welcome to HJS Kampala</div>
+            </div>
+            <div class="slide">
+                <img src="images/hero2.jpg" alt="Hero Image 2">
+                <div class="caption">Quality Education for All</div>
+            </div>
+            <div class="slide">
+                <img src="images/hero3.jpg" alt="Hero Image 3">
+                <div class="caption">Empowering Future Leaders</div>
+            </div>
+            <div class="slide">
+                <img src="images/hero4.jpg" alt="Hero Image 4">
+                <div class="caption">A Tradition of Excellence</div>
+            </div>
+        </div>
+        <div class="nav-circles">
+            <span class="circle active" data-slide="0"></span>
+            <span class="circle" data-slide="1"></span>
+            <span class="circle" data-slide="2"></span>
+            <span class="circle" data-slide="3"></span>
+        </div>
+    </section>
+    <section class="description">
+        <p>Harbor Junior School, established in 2005, is a name to reckon with, a landmark in every sense of the word and an epitome of good education and discipline. The school was officially opened in the new campus located at plot No. 17-25, Saddler way, Naguru, Kampala- Uganda on October 31st, 2015 by the education minister Maj. (Rtd) Jesca Alupo. The school currently has 750 students.</p>
+        <a href="#" class="read-more">Read More &gt;</a>
+    </section>
+    <div class="apply-online">
+        <a href="#">Apply Online</a>
+    </div>
+    <section class="main-section">
+        <div class="left-sidebar">
+            <a href=""><button class="sidebar-btn">Mandatory Public Disclosure</button></a>
+            <h2>Recent Events</h2>
+            <div class="event-box">
+                <div class="event-date">
+                    <span class="day">5</span>
+                    <span class="month">March</span>
+                </div>
+                <div class="event-details">
+                    <a href=""><h3>School Picnic at Explorer Ranch</h3></a>
+                    <p>9:00am | Ranch in Entebbe</p>
+                </div>
+            </div>
+            <div class="event-box">
+                <div class="event-date">
+                    <span class="day">5</span>
+                    <span class="month">June</span>
+                </div>
+                <div class="event-details">
+                    <a href=""><h3>Environment Day</h3></a>
+                    <p>10:00 am | DPS, Plot 17, 25 Naguru Dr, Kampala</p>
+                </div>
+            </div>
+            <div class="event-box">
+                <div class="event-date">
+                    <span class="day">8</span>
+                    <span class="month">June</span>
+                </div>
+                <div class="event-details">
+                    <a href=""><h3>General Parent Teacher Meeting</h3></a>
+                    <p>10:00 am | HJS Auditorium</p>
+                </div>
+            </div>
+            <a href="#" class="see-all-events">See All Events &gt;</a>
+            <div>
+                <a href=""><button class="sidebar-btn">Main Gallery</button></a>
+                <a href=""><button class="sidebar-btn">Competition Gallery</button></a>
+            </div>
+        </div>
+        <div class="center-content">
+            <h2>School Values</h2>
+                <img src="images/barner.jpg" alt="School Results" class="school-results-img">
+                <a href="#">View All the School Results &gt;</a>
+            <h2>Recent Event Photos</h2>
+            <div class="photo-slideshow">
+                <div class="photo-slide active">
+                    <img src="images/event1.jpg" alt="Recent Event Photo 1">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event2.jpg" alt="Recent Event Photo 2">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event3.jpg" alt="Recent Event Photo 3">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event4.jpg" alt="Recent Event Photo 4">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event5.jpg" alt="Recent Event Photo 5">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event6.jpg" alt="Recent Event Photo 6">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event6(2).jpg" alt="Recent Event Photo 7">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event7.jpg" alt="Recent Event Photo 8">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event8.jpg" alt="Recent Event Photo 9">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event9.jpg" alt="Recent Event Photo 10">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event10.jpg" alt="Recent Event Photo 11">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event11.jpg" alt="Recent Event Photo 12">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event12.jpg" alt="Recent Event Photo 13">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event13.jpg" alt="Recent Event Photo 14">
+                </div>
+                <div class="photo-slide">
+                    <img src="images/event15.jpg" alt="Recent Event Photo 15">
+                </div>
+            </div>
+            <div class="photo-nav-circles">
+                <span class="circle active" data-photo="0"></span>
+                <span class="circle" data-photo="1"></span>
+                <span class="circle" data-photo="2"></span>
+                <span class="circle" data-photo="3"></span>
+                <span class="circle" data-photo="4"></span>
+                <span class="circle" data-photo="5"></span>
+                <span class="circle" data-photo="6"></span>
+                <span class="circle" data-photo="7"></span>
+                <span class="circle" data-photo="8"></span>
+                <span class="circle" data-photo="9"></span>
+                <span class="circle" data-photo="10"></span>
+                <span class="circle" data-photo="11"></span>
+                <span class="circle" data-photo="12"></span>
+                <span class="circle" data-photo="13"></span>
+                <span class="circle" data-photo="14"></span>
+                <span class="circle" data-photo="15"></span>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <h3>Harbor Junior School On Social Media</h3>
+            <a href="https://www.facebook.com/profile.php?id=100078081353070" ></a>
+        </div>
+    </section>    
+    <section class="upcoming-event">
+        <div class="events-header">
+            <h4>Upcoming Events</h4>
+            <p><a href="#">See more events</a></p>
+        </div>
+        <div class="event">
+            <div class="event-dates">
+                <span class="date">16</span>
+                <span class="month">June</span>
+            </div>
+            <div class="event-detail">
+                <div class="event-time-location">
+                    <span class="time">10:00 am</span>
+                    <span class="location">KPS Auditorium</span>
+                </div>
+                <h5 class="event-title">Eid Al-adha</h5>
+            </div>
+        </div>
+    </section>
+    <section class="image-gallery">
+        <header class="gallery-header">
+            <h2>Studying at HJS</h2>
+        </header>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1">
+                <div class="gallery-overlay">
+                    <h3>FORCUSED LEARNING</h3>
+                    <p>Harbor Junior School is an inclusive school that receives all pupils from all..</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2">
+                <div class="gallery-overlay">
+                    <h3>WHY HJS?</h3>
+                    <p>We try to recorgnize the imperative of imparting an educational experience that..</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3">
+                <div class="gallery-overlay">
+                    <h3>HOW TO JOIN US</h3>
+                    <p>There will be an assessment to intimated date for students seeking admission..</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-news">
+        <div class="news-header">
+            <h4>Latest School News</h4>
+            <p><a href="#">See all news</a></p>
+        </div>
+        <div class="news-content">
+            <div class="left-column">
+                <div class="main-news">
+                    <img src="images/admit.jpg" alt="Main News">
+                    <h5 class="news-category">ADMISSIONS</h5>
+                    <a href=""><p class="news-title">Term 1 2024 - 2025 Intake Admissions are open</p></a>
+                    <p class="news-date">March 26, 2024</p>
+                </div>
+            </div>
+            <div class="center-column">
+                <div class="small-news">
+                    <img src="images/admit1.jpg" alt="News 1">
+                    <div class="news-info">
+                        <h5 class="news-category">ADMISSIONS</h5>
+                        <a href=""><p class="news-title">Term 1 2023 - 2024 Intake Admissions are open</p></a>
+                        <p class="news-date">May 30, 2023</p>
+                    </div>
+                </div>
+                <div class="small-news">
+                    <img src="images/admit2.jpg" alt="News 2">
+                    <div class="news-info">
+                        <h5 class="news-category">ACADEMICS</h5>
+                        <a href=""><p class="news-title">Class 10 CBSE Board Exam 2023 Results</p></a>
+                        <p class="news-date">May 16, 2023</p>
+                    </div>
+                </div>
+                <div class="small-news">
+                    <img src="images/admit3.jpg" alt="News 3">
+                    <div class="news-info">
+                        <h5 class="news-category">EVENTS</h5>
+                        <a href=""><p class="news-title">Annual Prize Day - Excellence is being celebrated</p></a>
+                        <p class="news-date">March 23, 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="google-rating">
+                    <h5>GOOD rating</h5>
+                    <p>Based on 39 reviews</p>
+                    <img src="https://via.placeholder.com/100x20" alt="Google Rating">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>This school is the best school for naturing your child spiritually, temporally and emotionally as their are forcuse on developing your childs future...</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="admissions">
+        <div class="admissions-content">
+            <p class="admissions-text">Admissions for ages 2.5 to 18 years are open!</p>
+            <a href="#" class="apply-now-button">APPLY NOW &gt;</a>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">○ School Virtual Tour</a></li>
+                    <li><a href="#">○ Fees Structure</a></li>
+                    <li><a href="#">○ School Policies</a></li>
+                    <li><a href="#">○ School News</a></li>
+                    <li><a href="#">○ Events and Activities</a></li>
+                    <li><a href="#">○ School Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Our School</h4>
+                <ul>
+                    <li>Admissions</li>
+                    <li><span class="icon">📞</span> +256 759 711 190</li>
+                    <li><span class="icon">📧</span> <a href="mailto:admissions@dpsuganda.com">admissions@hjsuganda.com</a></li>
+                    <li>Administration</li>
+                    <li><span class="icon">📞</span> +256 759 711 146</li>
+                    <li><span class="icon">📧</span> <a href="mailto:administrator@dpsuganda.com">administrator@hjsuganda.com</a></li>
+                    <li>Principal</li>
+                    <li><span class="icon">📞</span> +256 759 711 126</li>
+                    <li><span class="icon">📧</span> <a href="mailto:principalacademics@dpsuganda.com">principalacademics@hjsuganda.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Address</h4>
+                <address>
+                    🌍Plot 17-25, Saddler Way, Kampala P.O. Box 72208, Naguru, Kampala, Uganda
+                </address>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.658573299197!2d32.60123351465616!3d0.34261066404781444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMHDDsDIwJzMyLjciTiAzMsKwMzUnMjguMSJF!5e0!3m2!1sen!2sug!4v1594134736154!5m2!1sen!2sug" width="300" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024. Harbor Junior School is registered by the Ministry of Education and Sports</p>
+        </div>
+    </footer>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
