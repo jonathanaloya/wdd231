@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.header-top {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.school-info {
+    color: #000;
+    text-align: right;
+    font-size: 15px;
+    margin-inline-end: 50px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+}
+
+.logo {
+    height: 150px;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: -160px;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #228B22;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.apply-online {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.apply-online a {
+    text-decoration: none;
+    color: white;
+    background-color: #084308;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.apply-online a:hover {
+    box-shadow: 0 0 10px 5px rgba(34, 139, 34, 0.5);
+    color: white;
+}
+
+.hero {
+    background-image: url("/chamber/harbor/images/heroo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.font {
+    font-weight: bold;
+}
+
+.feedback-section {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #007bff;
+    margin-top: 20px;
+}
+
+.feedback-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.feedback-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-form button {
+    background-color: rgb(25, 189, 25);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.feedback-form button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-right: 40px;
+}
+
+/* Map Section */
+.map-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+}
+
+.map-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h4 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.map-container {
+    margin-top: 10px;
+}
+
+.footer-line {
+    border-top: 1px solid #ffffff;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+.admissions {
+    background-color: #011f01;
+    padding: 20px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+.admissions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admissions-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.apply {
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply:hover {
+    color: #306400;
+}
+
+.apply-now-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-now-button:hover {
+    background-color: #ffffff;
+    color: #006400;
+}
+
+@media (max-width: 768px) {
+    .header-main, .main-section, .footer-container, .admissions-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .header-main nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section {
+        padding: 10px;
+    }
+
+    .left-sidebar, .right-sidebar, .center-content {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        max-width: 90%;
+    }
+
+    .latest-news .news-content {
+        grid-template-columns: 1fr;
+    }
+
+    .admissions-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admissions-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .apply-now-button {
+        text-align: center;
+    }
+}

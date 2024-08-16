@@ -1,0 +1,513 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+}
+
+.header-top {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.school-info {
+    color: #000;
+    text-align: right;
+    font-size: 15px;
+    margin-inline-end: 50px;
+}
+
+.description {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.description .read-more {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.apply-online {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.apply-online a {
+    text-decoration: none;
+    color: white;
+    background-color: #084308;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.apply-online a:hover {
+    box-shadow: 0 0 10px 5px rgba(34, 139, 34, 0.5);
+    color: white;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+}
+
+.logo {
+    height: 150px;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: -140px;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #228B22;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul li .dropdown li {
+    margin: 0;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #2f3e4e;
+}
+
+.nav {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #573b04;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #dedede;
+    margin: 20px 0;
+}
+
+.details-box {
+    background-color: #e9edf1;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-box div {
+    text-align: center;
+}
+
+.details-box div h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #0000;
+}
+
+.details-box div p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #2f3e4e;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px; /* Space between the image and text sections */
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%; /* Ensures it takes up half the width */
+    padding: 20px;
+}
+
+.event-form-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.event-form-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.event-form .form-group {
+    margin-bottom: 15px;
+}
+
+.event-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.event-form .form-group input,
+.event-form .form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.event-form .form-group input:focus,
+.event-form .form-group textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.event-form .form-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.event-form .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.event-form .btn.btn-primary {
+    background-color: #4CAF50;
+    color: #000000;
+    border-color: #007BFF;
+}
+
+.event-form .btn.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.event-form .btn.btn-secondary {
+    background-color: #fff;
+    color: #000000;
+    border-color: #007BFF;
+}
+
+.event-form .btn.btn-secondary:hover {
+    background-color: #f8f9fa;
+    border-color: #0056b3;
+}
+
+
+/* Center Content Styling */
+.center-content {
+    background-color: #f5f2f2;
+    width: 48%;
+    padding: 10px;
+    position: relative; /* Ensure relative positioning for absolute positioning of circles */
+}
+
+/* Photo Slideshow */
+.photo-slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+/* Photo Slides */
+.photo-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.photo-slide.active {
+    opacity: 1;
+}
+
+.photo-slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Circles for Photo Slideshow */
+.photo-nav-circles {
+    position: absolute;
+    bottom: 10px; /* Adjust positioning as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.photo-nav-circles .circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.photo-nav-circles .circle.active {
+    background-color: #4CAF50;
+}
+
+
+/* Main Content */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+/* Photo Slideshow */
+.photo-slideshow {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Decreased height */
+    overflow: hidden;
+}
+
+.photo-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.photo-slide.active {
+    opacity: 1;
+}
+
+.photo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admissions {
+    background-color: #011f01; /* Dark green background */
+    padding: 20px;
+    text-align: center;
+    color: #ffcc00; /* Gold text color */
+}
+
+.admissions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admissions-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.apply-now-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-now-button:hover {
+    background-color: #ffffff;
+    color: #006400; /* Dark green text color on hover */
+}
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h4 {
+    color: #ffcc00; /* Gold color for headers */
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px; /* Small font size */
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.map-container {
+    margin-top: 10px;
+}
+
+.footer-line {
+    border-top: 1px solid #ffffff; /* White line */
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px; /* Small font size for bottom text */
+}
+@media (max-width: 768px) {
+    .header-main, .main-section, .footer-container, .admissions-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .header-main nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section {
+        padding: 10px;
+    }
+
+    .left-sidebar, .right-sidebar, .center-content {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        max-width: 90%;
+    }
+
+    .latest-news .news-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .admissions-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admissions-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .apply-now-button {
+        text-align: center;
+    }
+}

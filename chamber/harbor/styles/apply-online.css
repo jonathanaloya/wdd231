@@ -1,0 +1,483 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.header-top {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.school-info {
+    color: #000;
+    text-align: right;
+    font-size: 15px;
+    margin-inline-end: 50px;
+}
+
+.description {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.description .read-more {
+    color: #228B22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.apply-online {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.apply-online a {
+    text-decoration: none;
+    color: white;
+    background-color: #084308;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.apply-online a:hover {
+    box-shadow: 0 0 10px 5px rgba(34, 139, 34, 0.5);
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+}
+
+.logo {
+    height: 150px;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: -160px;
+    border-radius: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #228B22;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    z-index: 1;
+    min-width: 200px;
+}
+
+nav ul li .dropdown li {
+    margin: 0;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.hero {
+    background-image: url("/chamber/harbor/images/heroo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Adjust the overlay color and transparency as needed */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.sidebar {
+    width: 25%;
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 2px solid #0a6c0a;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a.active {
+    background-color: #f78e1e;
+    padding: 10px;
+    display: block;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+label span {
+    color: #f5c24c;
+    margin-left: 3px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input:focus, select:focus {
+    border-color: #f5c24c;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #f5c24c;
+    color: #003c71;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    border-color: #f5c24c;
+    color: #003c71;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+}
+.header-container h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.header-container button {
+    padding: 8px 16px;
+    background-color: #052e05;
+    color: #f57c00;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header-container button:hover {
+    background-color: #054705;
+}
+
+
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h4 {
+    color: #ffcc00; /* Gold color for headers */
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px; /* Small font size */
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.map-container {
+    margin-top: 10px;
+}
+
+.footer-line {
+    border-top: 1px solid #ffffff; /* White line */
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px; /* Small font size for bottom text */
+}
+.admissions {
+    background-color: #011f01; /* Dark green background */
+    padding: 20px;
+    text-align: center;
+    color: #ffcc00; /* Gold text color */
+}
+
+.admissions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admissions-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.apply-now-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-now-button:hover {
+    background-color: #ffffff;
+    color: #006400; /* Dark green text color on hover */
+}
+@media (max-width: 768px) {
+    .header-main, .main-section, .footer-container, .admissions-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .header-main nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section {
+        padding: 10px;
+    }
+
+    .left-sidebar, .right-sidebar, .center-content {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        max-width: 90%;
+    }
+
+    .latest-news .news-content {
+        grid-template-columns: 1fr;
+    }
+
+    .admissions {
+    background-color: #006400; /* Dark green background */
+    padding: 20px;
+    text-align: center;
+    color: #ffcc00; /* Gold text color */
+}
+
+.admissions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admissions-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.apply-now-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-now-button:hover {
+    background-color: #ffffff;
+    color: #006400; /* Dark green text color on hover */
+}
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .admissions-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admissions-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .apply-now-button {
+        text-align: center;
+    }
+}
