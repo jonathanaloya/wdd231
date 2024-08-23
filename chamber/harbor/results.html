@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="styles/playarea.css">
+        <link rel="stylesheet" href="styles/mandatory.css">
     </head>
 <body>
     <header>
@@ -70,7 +70,7 @@
         </div>
         <section class="hero">
                 <div class="hero-text">
-                    <h1>LIBRARY</h1>
+                    <h1>TERM RESULTS</h1>
                 </div>
                 <div class="apply-online">
                     <a href="apply-online.html">Apply Online</a>
@@ -79,6 +79,12 @@
     </header>
     <div class="container">
         <aside class="sidebar">
+            <h3>ADMISSIONS</h3>
+            <ul>
+                <li><a href="part.html">How to be a HJS Student</a></li>
+                <li><a href="fees.html">Fees Structure</a></li>
+                <li><a href="apply-online.html">Apply Online</a></li>
+            </ul>
             <h3>ABOUT US</h3>
             <ul>
                 <li><a href="about.html">Mission, Vision, Key Policies</a></li>
@@ -88,34 +94,127 @@
                 <li><a href="policies.html">School Policies</a></li>
                 <li><a href="board.html">Board of Directors</a></li>
             </ul>
-            <h3>INFRASTRUCTURE</h3>
-            <ul>
-                <li><a href="playarea.html">Pre-School Play Area</a></li>
-                <li><a href="library.html" class="active">Library</a></li>
-            </ul>
+            <div class="latest-news">
+                <h3>LATEST SCHOOL NEWS</h3>
+                <img src="images/school-news.jpg" alt="School News">
+                <img src="images/discover.jpg" alt="Discover">
+            </div>
         </aside>
-        
-        <div class="library-rules">
-            <h1>Library</h1>
-            <p>The HJS, International library promotes literacy, fosters a love of reading, and helps students and staff use ideas, information, and technology effectively. 
-                It is a well organized library; well-spaced and well set. It well stocked with thousands of books on various topics. 
-                The book shelves are side-by-side, of an expansive, well lit and organized room at the top most floor of the building. This offers a quiet environment, away from any destruction.</p>
-            <P>The School library has sections ranging from textbooks and reference books to fiction and general knowledge. 
-                Since the school aims at making learning a fun process, there is an assortment of books and magazines available on general topics and separate sections for hobby-related books, books on travel, animal care, short stories, drama, poetry, astrology and other topics.</P>
-            <p>The school subscribes to various dailies, weekly and monthly journals, newsletters and magazines, which includes National and International publications.</p>
-        
-        
-            <h3>Library Rules</h3>
-            <ul>
-                <li>Students are not allowed to bring their personal books inside the library. One notebook may be brought with the permission of the librarian.</li>
-                <li>All students must get books issued before taking them out of the library.</li>
-                <li>Any reader who damages the furniture, spoils the library property shall have to make up for the damage.</li>
-                <li>No reader is allowed to remove/shift library furniture from one place to another unless directed to do so.</li>
-                <li>The school library is open to all bonafide students of the school from 8 a.m. to 3.00 p.m. on all working days. All classes are provided with at least one library period per week.</li>
-                <li>Each student of Classes II to XII is issued a library card with a photograph. One book is issued for a period of two weeks at a time.</li>
-                <li>Students are allowed to borrow books only on their own cards.</li>
-                <li>They must maintain absolute silence in the library.</li>
-            </ul>
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tablinks active" onclick="openTab(event, 'GeneralInformation')">Class 10 Results 2023 - 2024</button>
+                <button class="tablinks" onclick="openTab(event, 'DocumentsInformation')">Class 12 Results 2023-2024</button>
+                <button class="tablinks" onclick="openTab(event, 'ResultsAcademics')">Other Years' Results</button>
+            </div>
+    
+            <div id="GeneralInformation" class="tabcontent active">
+                <p>The School Management, Principal & Staff congratulates all Class X students on their excellent results in the CBSE Board Exam – 2024. 
+                    A special thanks to our wonderful Teachers for their unwavering dedication and effort, making this achievement possible.</p>
+                <img src="images/gallery3.jpg" alt="Results image">
+            </div>
+            <div id="DocumentsInformation" class="tabcontent">
+                <p>The School Management, Principal & Staff of DPSI extend heartfelt congratulations to all Class XII students for their outstanding results in the CBSE Board Exam -2024. 
+                    Our sincere gratitude goes to our exceptional Teachers for their unwavering dedication and effort, making this achievement possible.</p>
+                <img src="images/welfare.jpg" alt="Results image">
+            </div>
+            <div id="ResultsAcademics" class="tabcontent">
+                <div class="library-rules">
+                    <ul>
+                        <li><a href="images/barner.jpg">ACADEMIC YEAR : 2022 – 2023 CLASS 12 RESULTS</a></li>
+                        <li><a href="images/event10.jpg">ACADEMIC YEAR : 2022 – 2023 CLASS 10 RESULTS</a></li>
+                        <li><a href="images/event12.jpg">ACADEMIC YEAR : 2019 – 2020 CLASS 12 RESULTS</a></li>
+                        <li><a href="images/discover.jpg">ACADEMIC YEAR : 2019 – 2020 CLASS 10 RESULTS</a></li>
+                        <li><a href="images/event3.jpg">ACADEMIC YEAR : 2018 – 2019 CLASS 10 RESULTS</a></li>
+                        <li><a href="images/hero3.jpg">ACADEMIC YEAR : 2018 – 2019 CLASS 12 RESULTS</a></li>
+                        <li><a href="images/gallery2.jpg">ACADEMIC YEAR : 2017 – 2018</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        <div id="StaffDetails" class="tabcontent">
+            <table>
+                <tr>
+                    <td><strong>Documents / Information</strong></td>
+                    <td><strong>Details</strong></td>
+                </tr>
+                <tr>
+                    <td>Principle</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Total No. of teachers</td>
+                    <td>39</td>
+                </tr>
+                <tr>
+                    <td>PGT</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>TGT</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>PRT</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>NTT/Others</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Teachers - Section ratio</td>
+                    <td>1:1.5</td>
+                </tr>
+                <tr>
+                    <td>Teachers - Student ratio</td>
+                    <td>1:20</td>
+                </tr>
+                <tr>
+                    <td>Details of Special educator</td>
+                    <td>NA</td>
+                </tr>
+                <tr>
+                    <td>Details of Counsellor & wellness teacher</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <div id="SchoolInfrastructure" class="tabcontent">
+            <table>
+                <tr>
+                    <td><strong>Information</strong></td>
+                    <td><strong>Details (square meters)</strong></td>
+                </tr>
+                <tr>
+                    <td>Total campus area of the school</td>
+                    <td>40468 Square Metres</td>
+                </tr>
+                <tr>
+                    <td>Number and size of the class rooms</td>
+                    <td>Large size rooms (Size 103 m²) = 22<br>Small Size rooms (Size 60 m²) = 14<br>Total Number of Class rooms = 36</td>
+                </tr>
+                <tr>
+                    <td>Number and size of laboratories including computer labs</td>
+                    <td>6 Laboratories ( each size 103 m²)</td>
+                </tr>
+                <tr>
+                    <td>Internet facility (Y/N)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Number of Girls toilets</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Number of Boys toilets</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Link of the school infrastructure inspection</td>
+                    <td>Virtual Tour</td>
+                </tr>
+            </table>
+        </div>
         </div>
     </div>
     <section class="admissions">
@@ -166,6 +265,6 @@
             <p>Copyright © 2024. Harbor Junior School is registered by the Ministry of Education and Sports</p>
         </div>
     </footer>
-    <script src="scripts/board.js"></script>
+    <script src="scripts/mandatory.js"></script>
 </body>
 </html>

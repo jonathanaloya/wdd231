@@ -8,4 +8,5 @@ document.querySelectorAll('.read-more').forEach(function(button) {
             target.style.display = "none";
         }
     });
+    
 });

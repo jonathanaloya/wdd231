@@ -268,7 +268,7 @@ nav ul li:hover .dropdown {
     margin: 0;
     font-size: 24px;
 }
-.header-container button {
+.header-container button a {
     padding: 8px 16px;
     background-color: #052e05;
     color: #f57c00;
@@ -281,6 +281,8 @@ nav ul li:hover .dropdown {
 .header-container button:hover {
     background-color: #054705;
 }
+
+
 table {
     width: 100%;
     border-collapse: collapse;
