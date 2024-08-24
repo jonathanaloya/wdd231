@@ -19,6 +19,10 @@ body {
     margin-inline-end: 50px;
 }
 
+.school-info a img{
+    width: 50px;
+}
+
 .description {
     padding: 40px 20px;
     text-align: center;
@@ -68,7 +72,7 @@ body {
     height: 150px;
     display: flex;
     margin-left: 20px;
-    margin-bottom: -160px;
+    margin-bottom: -90px;
     border-radius: 25px;
 }
 
